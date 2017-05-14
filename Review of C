@@ -1,6 +1,6 @@
 Mac compile C in Terminal
-gcc Hello.c
-./a.out
+gcc Hello.c或者gcc Hello.c -o Hello
+./a.out或者./可执行文件名
 
 C的输入和输出
 
