@@ -1,3 +1,7 @@
+Mac compile C in Terminal
+gcc Hello.c
+./a.out
+
 C的输入和输出
 
 基本输入输出
