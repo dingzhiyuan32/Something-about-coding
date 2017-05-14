@@ -1,0 +1,13 @@
+C的输入和输出
+
+基本输入输出
+#include <stdio.h>
+int scanf(const char *, ...);
+int printf(const char *, ...);
+返回值>0：成功读入的数据项个数；0：没有项被赋值；EOF：第一个长时输入的字符是EOF结束。
+int n = scanf("%d%c%s%lf%f", &a, &b,&c, &d, &e);
+
+读取一行
+char * gets(char * s);
+从标准输入读取一行到字符串s
+
