@@ -3,3 +3,6 @@ g++ Hello.cpp
 ./a.out
 或g++ Hello.cpp -o filename
 ./filename
+
+IOStream
+std::cout << "Hello, world!" << std::endl;
