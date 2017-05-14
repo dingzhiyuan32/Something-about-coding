@@ -15,3 +15,27 @@ int n = scanf("%d%c%s%lf%f", &a, &b,&c, &d, &e);
 char * gets(char * s);
 从标准输入读取一行到字符串s
 
+int sscanf(const char * buffer, const char * format[, address, ...]);
+int sscanf(const char * buffer, const char * format[, address, ...]);
+从buffer输入和输出
+
+函数指针
+定义的一般形式为：
+类型名 (* 指针变量名)(参数类型1, 参数类型2,…); 例如：
+	int (*pf)(int ,char);
+表示pf是一个函数指针，它所指向的函数，返回值类型应是int，该函数应有两个参数，第一个是int 类型，第二个是char类型。
+可以用一个原型匹配的函数的名字给一个函数指针赋值。要通过函数指针调用它所指向的函数，写法为：函数指针名(实参表);
+
+动态内存分配
+P = new T;
+T是任意类型名，P是类型为T * 的指针。这样的语句，会动态分配出一片大小为 sizeof(T)字节的内存空间，并且将该内存空间的起始地址赋值给P。
+P = new T[N];
+在进行较大的动态内存分配时，要判断一下分配是否成功。判断的方法是：如果new表达式返回值是NULL，则分配失败，否则分配成功。
+C++提供 “delete” 运算符，用以释放动态分配的内存空间。delete运算符的基本用法是：
+	delete 指针；
+  delete [] 指针;
+
+获得命令行参数
+int main(int argc, char * argv[]){}
+
+  
