@@ -1,0 +1,5 @@
+Mac 编译 c++ in Terminal
+g++ Hello.cpp
+./a.out
+或g++ Hello.cpp -o filename
+./filename
