@@ -48,3 +48,7 @@ delete: 从“堆”中动态删除存储块。
   形参声明为引用量；
   函数体直接对引用量操作； 
 
+c++访问控制Public/private/protected
+Public: 公有成员，其后声明的所有成员可以被所有的人访问。
+Private:私有成员，除了该类型的创建者和类的内部成员函数之外，任何人不能访问。
+Protected:保护成员，与Private基本相同，区别是继承的结构可以访问Protected成员，但不可以访问Private 成员。
