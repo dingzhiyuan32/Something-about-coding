@@ -52,3 +52,12 @@ c++访问控制Public/private/protected
 Public: 公有成员，其后声明的所有成员可以被所有的人访问。
 Private:私有成员，除了该类型的创建者和类的内部成员函数之外，任何人不能访问。
 Protected:保护成员，与Private基本相同，区别是继承的结构可以访问Protected成员，但不可以访问Private 成员。
+友元friend:访问私有部分。友元可以是外部全局函数、类或类的成员函数。
+
+class的成员默认为Private;
+struct的成员默认为Public.
+
+当类的public成员函数f返回对该类private成员m的非const引用时，如果f的调用作为赋值语句的左值，则访问控制不起作用，对象的使用者可以直接存取m的值。
+  称这种情形为访问控制的“陷阱”。
+利用const填补这个陷阱
+
