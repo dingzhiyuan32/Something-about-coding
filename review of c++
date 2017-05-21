@@ -82,6 +82,3 @@ const对象：对象被初始化后，它的数据成员在其生命期内不被
 在成员函数的声明和定义后面加上const使之成为const成员函数。int const_f() const;其中const_f()是const函数，保证不修改x2;
 声明为const的对象是不能被赋值的。声明为const的对象不能随便调用任意的成员函数。声明为const的对象只能调用声明为const的成员函数。
 const的成员函数不能改变成员变量
-
-
-
