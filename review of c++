@@ -1,5 +1,3 @@
-Let's test this function!
-
 Mac 编译 c++ in Terminal
 g++ Hello.cpp
 ./a.out
